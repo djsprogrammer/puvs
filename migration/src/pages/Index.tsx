@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom'
 import icon from '../assets/icon.jpg'
 
-import '../styles/all.css'
 import '../styles/app.css'
 
 export default function Index() {
@@ -25,7 +25,7 @@ export default function Index() {
                     Basta preencher nosso formulário e o resultado estará disponível!
                 </p>
             </div>
-            <a id="confirm-button" href="./pages/form.html">Conferir</a>
+            <Link id='confirm-button' to='/form'>Conferir</Link>
         </>
     )
 }
