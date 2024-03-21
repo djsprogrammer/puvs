@@ -1,31 +1,13 @@
-import icon from './assets/icon.jpg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import './styles/all.css'
-import './styles/app.css'
+import Index from './pages/Index'
 
 export default function App() {
     return (
-        <>
-            <div id="icon">
-                <img src={icon} alt='Logo' />
-                <h1>PUVS</h1>
-            </div>
-            <div id="main-card">
-                <div>
-                    <p><b>PUVS</b> é um sistema que fornece métricas fundamentais para a saúde, como:</p>
-                    <ul>
-                        <li><span>IMC</span></li>
-                        <li><span>Estimativa de gasto calórico</span></li>
-                        <li><span>Recomendação de consumo de água</span></li>
-                        <li><span>Sugestão de ingestão calórica</span></li>
-                    </ul>
-                </div>
-                <hr />
-                <p>
-                    Basta preencher nosso formulário e o resultado estará disponível!
-                </p>
-            </div>
-            <a id="confirm-button" href="./pages/form.html">Conferir</a>
-        </>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Index />} />
+            </Routes>
+        </Router>
     )
 }
