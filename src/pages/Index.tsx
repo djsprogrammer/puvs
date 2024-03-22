@@ -25,7 +25,9 @@ export default function Index() {
                     Basta preencher nosso formulário e o resultado estará disponível!
                 </p>
             </div>
-            <Link id='confirm-button' to='/form'>Conferir</Link>
+            <div style={{textAlign: 'center'}}>
+                <Link id='confirm-button' to='/form'>Conferir</Link>
+            </div>
         </>
     )
 }
