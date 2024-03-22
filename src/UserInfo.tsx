@@ -4,6 +4,7 @@ interface User {
     weight: number
     height: number
     sex: string
+    age: number
     exerciseLevel: number
 }
 
@@ -11,6 +12,7 @@ const DEFAULT_VALUE: User = {
     weight: 0,
     height: 0,
     sex: '',
+    age: 0,
     exerciseLevel: 0
 }
 
